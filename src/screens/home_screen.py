@@ -11,14 +11,28 @@ def home_screen():
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
-        st.header("I'm Student")
+        st.markdown("""
+            <h2 style="
+                color:#2b2a2a;
+                font-weight:700;
+            ">
+            I'm student
+            </h2>
+        """, unsafe_allow_html=True)
         st.image("E:/Major_AI_Projects/Attenzo/src/components/images/student.svg", width=120)
         if st.button('Student Portal', type='primary', icon=':material/arrow_outward:'):
             st.session_state['login_type'] = 'student'
             st.rerun()
 
     with col2:
-        st.header("I'm teacher")
+        st.markdown("""
+            <h2 style="
+                color:#2b2a2a;
+                font-weight:700;
+            ">
+            I'm teacher
+            </h2>
+        """, unsafe_allow_html=True)
         st.image("E:/Major_AI_Projects/Attenzo/src/components/images/teacher.svg", width=120)
         if st.button('Teacher Portal', type='primary', icon=':material/arrow_outward:'):
             st.session_state['login_type'] = 'teacher'

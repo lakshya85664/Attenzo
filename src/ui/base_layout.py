@@ -49,18 +49,17 @@ def style_base_layout():
             h2{
                 font-family: 'Climate Crisis', sans-serif !important;
                 font-size: 2rem !important;
-                color: black !important;
                 line-height: 1.1 !important;
                 margin-bottom: 0rem !important;
             }
                 
             h3, h4{
-                font-family: 'Outfit', sans-serif
+                font-family: 'Outfit', sans-serif !important;
             }
 
             button{
-                boreder-radius: 1.5rem !important;
-                background: #5865F2 !important;
+                border-radius: 1.5rem !important;
+                background-color: #5865F2 !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -68,8 +67,8 @@ def style_base_layout():
             }
                 
             button[kind = "secondary"]{
-                boreder-radius: 1.5rem !important;
-                background: #EB459E !important;
+                border-radius: 1.5rem !important;
+                background-color: #EB459E !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -77,8 +76,8 @@ def style_base_layout():
             }
                 
             button[kind = "tertiary"]{
-                boreder-radius: 1.5rem !important;
-                background: black !important;
+                border-radius: 1.5rem !important;
+                background-color: black !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -87,6 +86,28 @@ def style_base_layout():
                 
             button:hover{
                 transform: scale(1.05)    
+            }
+                
+            input[type="text"], input[type="password"] {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                border: 2px solid #7c83fd !important;
+                border-radius: 8px !important;
+            }
+        
+            /* Input label color */
+            label {
+                color: #000000 !important;
+            }
+                
+            input::placeholder {
+                color: #aaaaaa !important;
+                opacity: 1 !important;
+            }
+                
+            hr {
+                border: 1px solid rgba(0, 0, 0, 0.2) !important;
+                opacity: 1 !important;
             }
         </style>
         """, unsafe_allow_html=True)
