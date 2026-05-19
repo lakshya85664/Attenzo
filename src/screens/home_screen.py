@@ -19,7 +19,7 @@ def home_screen():
             I'm student
             </h2>
         """, unsafe_allow_html=True)
-        st.image("E:/Major_AI_Projects/Attenzo/src/components/images/student.svg", width=120)
+        st.image("src/components/images/student.svg", width=120)
         if st.button('Student Portal', type='primary', icon=':material/arrow_outward:'):
             st.session_state['login_type'] = 'student'
             st.rerun()
