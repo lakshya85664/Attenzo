@@ -87,3 +87,6 @@ watchdog==6.0.0
 websockets==15.0.1
 yarl==1.23.0
 zstandard==0.25.0
+librosa==0.10.2
+resemblyzer==0.1.1.dev0
+soundfile==0.12.1
