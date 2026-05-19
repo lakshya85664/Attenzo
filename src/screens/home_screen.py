@@ -33,7 +33,7 @@ def home_screen():
             I'm teacher
             </h2>
         """, unsafe_allow_html=True)
-        st.image("E:/Major_AI_Projects/Attenzo/src/components/images/teacher.svg", width=120)
+        st.image("src/components/images/teacher.svg", width=120)
         if st.button('Teacher Portal', type='primary', icon=':material/arrow_outward:'):
             st.session_state['login_type'] = 'teacher'
             st.rerun()
